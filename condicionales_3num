@@ -1,0 +1,28 @@
+// Programa que pida tres números y nos indique, si son iguales o cual es mayor
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a, b, c;
+
+    cout << ("Ingrese el primer numero: ");
+    cin >> a;
+
+    cout << ("Ingrese el segundo numero: ");
+    cin >> b;
+
+    cout << "Ingrese el tercer numero: ";
+    cin >> c;
+
+    if (a==b & c==a){
+        cout << ("Los numeros son iguales") << endl;
+    } else if (a>b & a>c) {
+        cout << a << " es mayor que " << b << " y " << c << endl;
+    } else if (b>a & b>c) {
+        cout << b << " es mayor que " << a << " y " << c << endl;
+    } else {
+        cout << c << " es mayor que " << a << " y " << b << endl;
+    }
+    return 0;
+}
