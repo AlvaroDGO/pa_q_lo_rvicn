@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N, M, D = 0, R = 0, G = 0;
+    cin >> N >> M;
+
+    if (M==0){
+            cout << "M != 0";
+    } else {
+
+    D = N / M;
+    R = N % M;
+    G = D + R;
+
+    cout << G;
+
+    }
+
+    return 0;
+}
