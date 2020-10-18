@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int A,B,suma = 0;
+    cin >> A >> B;
+
+    suma = A + B;
+
+    cout << suma;
+
+    return 0;
+}
