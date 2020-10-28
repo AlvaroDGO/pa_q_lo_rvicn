@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int c1,c2,c3;
+    cin >> c1 >> c2 >>c3;
+
+    int suma = c1+c2+c3;
+
+    double promedio = suma/3;
+
+    if(promedio>=6){
+        // Aprobado
+        cout << "1" << endl;
+    } else
+    //Reprobado
+    cout << "0" << endl;
+
+    /*condicion ? cumple : no cumple ; Operador ternario*/
+
+    return 0;
+}
