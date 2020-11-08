@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int year;
+    cin>>year;
+
+    int f1=year%4;
+
+    if(f1==0){
+        cout<<"BISIESTO"<<endl;
+    }else {
+        cout<<"NO BISIESTO"<<endl;
+    }
+
+    return 0;
+}
