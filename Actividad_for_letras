@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int f,c;
+    cin>>f>>c;
+
+    char xd[f][c];
+    for(int i=0;i<f;i++){
+        for(int j=0;j<c;j++){
+            cin>>xd[i][j];
+        }
+    }
+    cout<<endl;
+
+    for(int i=0;i<f;i++){
+        for(int j=0;j<c;j++){
+            cout<<xd[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
