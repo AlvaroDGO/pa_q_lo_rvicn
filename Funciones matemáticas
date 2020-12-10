@@ -1,0 +1,90 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int Val_abs(int x)
+{
+    int abs=0;
+    if(x<0)
+        abs=-1*x;
+    else
+        abs=x;
+
+    cout<<abs<<endl;
+    return abs;
+}
+int Max_num(int x,int y)
+{
+    int may=0;
+    if(x>y)
+        may=x;
+    else
+        may=y;
+
+    cout<<may<<endl;
+    return may;
+}
+int Min_num(int x,int y)
+{
+    int men=0;
+    if(x<y)
+        men=x;
+    else
+        men=y;
+
+    cout<<men<<endl;
+    return men;
+}
+double Rai_Cua(double x)
+{
+    double ra=0;
+    ra=sqrt(x);
+    std::cout<<std::fixed;
+    std::cout<<std::setprecision(2)<<ra<<endl;
+    return ra;
+}
+long int Pot(long int x,long int y)
+{
+    long int po;
+    po=pow(x,y);
+
+    cout<<po<<endl;
+    return po;
+}
+
+int main()
+{
+    int rep,n,n1,n2;
+    cin>>rep;
+    double n3;
+    long int n4,n5;
+    int op;
+
+    for(int i=0;i<rep;i++){
+        cin>>op;
+        switch(op){
+        case 1:
+            cin>>n;
+            Val_abs(n);
+            break;
+        case 2:
+            cin>>n1>>n2;
+            Max_num(n1,n2);
+            break;
+        case 3:
+            cin>>n1>>n2;
+            Min_num(n1,n2);
+            break;
+        case 4:
+            cin>>n3;
+            Rai_Cua(n3);
+            break;
+        case 5:
+            cin>>n4>>n5;
+            Pot(n4,n5);
+            break;
+        }
+    }
+
+    return 0;
+}
