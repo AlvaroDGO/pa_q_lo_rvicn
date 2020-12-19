@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num,x1,x2,primo=0;
+    cin>>num;
+    int arreglo[num];
+
+    for(int i=0;i<num;i++){
+        cin>>arreglo[i];
+    }
+
+    cin>>x1>>x2;
+
+    for(int i=0;i<num;i++){
+        if((arreglo[i]>=x1)&&(arreglo[i]<=x2)){
+            if((arreglo[i]==2)||(arreglo[i]%2!=0)&&(arreglo[i]!=1)){
+                primo++;
+            }
+        }
+    }
+    cout<<primo<<endl;
+
+    return 0;
+}
